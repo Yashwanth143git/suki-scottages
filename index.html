@@ -451,7 +451,7 @@
                                 <span class="star">★★★★★</span>
                                 4.8 (120 reviews)
                             </p>
-                            <button class="btn">View Details</button>
+                            <a href="/card.html"><button class="btn">View Details</button></a>
                         </div>
                     </div>
                     <div class="cottage-card">
@@ -464,7 +464,7 @@
                                 <span class="star">★★★★★</span>
                                 4.9 (95 reviews)
                             </p>
-                            <button class="btn">View Details</button>
+                            <a href="/card.html"><button class="btn">View Details</button></a>
                         </div>
                     </div>
                 </div>
@@ -539,12 +539,13 @@
                 }
             });
 
-            viewDetailsBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const cottageName = this.closest('.cottage-card').querySelector('h3').textContent;
-                    alert(`You're viewing details for ${cottageName}. Full details coming soon!`);
-                });
-            });
+            // viewDetailsBtns.forEach(btn => {
+            //     btn.addEventListener('click', function() {
+            //         const cottageName = this.closest('.cottage-card').querySelector('h3').textContent;
+            //         alert(`You're viewing details for ${cottageName}. Full details coming soon!`);
+            //     });
+            // });
+
 
             learnMoreBtn.addEventListener('click', function() {
                 alert("More information about Suki's group of Cottages coming soon!");
